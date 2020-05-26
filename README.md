@@ -1,2 +1,2 @@
-# Easy-Degree
-# Official Website
+# EASY-DEGREE
+Our Official Website

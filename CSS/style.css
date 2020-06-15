@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Tera&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
 body,html
 {
     overflow-x: hidden;
     margin: 0;
     font-family: "Quicksand", sans-serif;
     background-color: whitesmoke;
-    
+    scroll-behavior: smooth;
    
 }
 .logoimgmain
@@ -811,5 +812,144 @@ width: 60%;
   .col{
     width: 100%;
     margin: 0 0 2rem 0;
+  }
+}
+
+
+.icon-chevron-down
+{
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  color: black;
+  animation: down .8s infinite ;
+  cursor: pointer;
+  font-size:100px;
+  width: 3.5%;
+  height: auto;
+  z-index: 100;
+  top: -100px;
+}
+@keyframes down
+{
+  0%{ top: -70px;}
+  50%{top: -65px;}
+  100%{top: -70px;}
+}
+@media screen and (max-width: 768px)
+{
+  .icon-chevron-down
+  {
+    width: 10%;
+  } 
+}
+/*carousel*/
+/* $base-background: #00CC99;
+ */
+ body {
+  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+}
+.btn {
+  border-radius: 2px;
+  padding: 8px 12px;
+  color: #5c8cbb;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+}
+.card {
+
+  background: #fff;
+  width: 40%;
+  margin: auto;
+  margin-bottom: 80px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  box-sizing: border-box;
+  padding: 48px;
+  text-align: center;
+}
+.products {
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s ease;
+}
+.product {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s ease;
+}
+.product.active {
+  opacity: 1;
+  visibility: visible;
+}
+.thumbnail {
+  margin: 0 0 48px;
+}
+.title {
+  margin: 0 0 12px;
+  color: #5c8cbb;
+  font-size: 24px;
+  transition: 0.5s ease;
+}
+.description {
+  margin: 0 0 48px;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 -12px -12px;
+}
+[ripple] {
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+}
+[ripple] .ripple {
+  position: absolute;
+  background: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  transform: scale(0);
+  animation: ripple 2s;
+}
+@keyframes ripple {
+  0% {
+    transform: scale(0);
+    opacity: 0.2;
+ }
+  100% {
+    transform: scale(20);
+    opacity: 0;
+ }
+}
+@media screen and (max-width: 768px)
+{
+  .card
+  {
+    width: 100%;
+  }
+}
+.aboutcard1
+{
+  display: flex; width: 87%; margin-left: auto;margin-right: auto;flex-direction: row;overflow: hidden;
+  font-size: 18px; height: auto;
+}
+@media screen and (max-width: 768px)
+{
+  .aboutcard1
+  {
+    flex-direction: column;
   }
 }

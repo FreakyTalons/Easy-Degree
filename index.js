@@ -18,6 +18,7 @@ y.addEventListener("animationend", myEndFunction1);
 function myEndFunction1()
 {
     y.style.opacity=100;
+    y.style.top='-'+89+'%';
 }
 //navbar js
 $('.navTrigger').click(function () {

@@ -91,8 +91,8 @@ body,html
 .nav div.logo a {
   text-decoration: none;
   color: #fff;
-  font-size: 30px;
-  font-weight: bold;
+  font-size: 25px;
+  font-weight:500;
 }
 
 .nav div.logo a:hover {
@@ -130,7 +130,7 @@ body,html
   color: #fff;
   line-height: 55px;
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 500;
  
 }
 
@@ -189,6 +189,7 @@ background-size:cover;
   .nav div.show_list {
       height: auto;
       display: none;
+      
   }
   .nav div.main_list ul {
       flex-direction: column;
@@ -428,25 +429,51 @@ background-size:cover;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   right: 15%;
+  
+}
+.dropdown-content1 {
+  display: none;
+  position: absolute;
+  background-color: #2b2b2b;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right: 15%;
+  
 }
 
 .dropdown-content a {
   color: whitesmoke;
  /* padding: 12px 16px;*/
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content1 a {
+  color: whitesmoke;
+ /* padding: 12px 16px;*/
+  font-size: 15px;
+  font-weight: 500;
   text-decoration: none;
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #2e2e2e; font-size: 23px;}
-
+.dropdown-content a:hover {background-color: #2e2e2e; font-size: 17px;}
+.dropdown-content1 a:hover {background-color: #2e2e2e; font-size: 17px;}
 .dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content1 {display: block;}
 @media screen and (max-width:1040px)
 {
   .dropdown
   {
   margin-left:70% ;  
+  }
+  .dropdown-content1 
+  {
+    max-height: 200px;
+    max-width: 160px;
+    overflow: auto;
   }
 
 }
@@ -823,19 +850,19 @@ width: 60%;
   margin-right: auto;
   position: relative;
   color: black;
-  animation: down .8s infinite ;
+  animation: down 1s infinite ;
   cursor: pointer;
   font-size:100px;
-  width: 3.5%;
+  width: 5%;
   height: auto;
   z-index: 100;
-  top: -100px;
+  top: -90px;
 }
 @keyframes down
 {
-  0%{ top: -70px;}
-  50%{top: -65px;}
-  100%{top: -70px;}
+  0%{ top: -90px;}
+  50%{top: -80px;}
+  100%{top: -90px;}
 }
 @media screen and (max-width: 768px)
 {
@@ -863,6 +890,23 @@ width: 60%;
   text-transform: uppercase;
   transition: 0.5s ease;
 }
+.btn1
+{
+  font-size:15px;
+  text-transform: uppercase;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  border: none;
+  width: auto;
+  color:#5c8cbb ;
+  background-color: transparent;
+  position: relative;
+  top: -20px;
+  transition: ease .1s;
+}
+.btn1:hover{font-size: 17px;}
 .card {
 
   background: #fff;

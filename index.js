@@ -66,6 +66,9 @@ $(document).ready(function() {
       $('.btn').css({
         color: getProductColor
       });
+      $('.btn1').css({
+        color: getProductColor
+      });
     }
   
     var productItem = $('.product'),

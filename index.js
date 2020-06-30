@@ -3,7 +3,11 @@ var x1= document.getElementById("myHead1");
 var x2= document.getElementById("myHead2");
 var x3= document.getElementById("myHead3");
 var y= document.getElementById("myImg");
-var z=document.getElementById("arrow")
+var z=document.getElementById("arrow");
+var a=document.getElementById("head1");
+var b=document.getElementById("head2");
+var c= document.getElementById("head3");
+var d= document.getElementById("head4");
 x.addEventListener("webkitAnimationEnd", myEndFunction);
 x.addEventListener("animationend", myEndFunction);
 function myEndFunction()
@@ -21,6 +25,10 @@ function myEndFunction1()
     y.style.opacity=100;
     y.style.top='-'+89+'%';
     z.style.display='block';
+    a.style.opacity=`${75}%`;
+    b.style.opacity=`${75}%`;
+    c.style.opacity=`${40}%`;
+    d.style.opacity=`${70}%`;
 }
 //navbar js
 $('.navTrigger').click(function () {

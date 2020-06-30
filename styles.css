@@ -18,7 +18,8 @@ body{
 .wrapper{
     margin-top: 60px;
     text-align: center;
-
+    width: 85%;
+    margin-left: 7.5%;
 }
 
 .wrapper h1{

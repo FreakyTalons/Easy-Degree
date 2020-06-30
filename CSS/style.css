@@ -2,13 +2,15 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Tera&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300;600&display=swap');
 body,html
 {
     overflow-x: hidden;
     margin: 0;
-    font-family: "Quicksand", sans-serif;
+    font-family: 'MuseoModerno', cursive;
     background-color: whitesmoke;
     scroll-behavior: smooth;
+    
    
 }
 .logoimgmain
@@ -28,6 +30,64 @@ body,html
 {
   0%{top: 0%;opacity: 0;}
   100%{opacity: 100;top: -89%;}
+}
+.headsub
+{
+  opacity: 0;
+    position: relative;
+    top: 30%;
+    animation: headanime1 1s  2s;
+    color:beige;
+    letter-spacing: 1.1rem;
+    font-size: 2.5rem;
+    line-height: 0.5rem;
+}
+@keyframes headanime1
+{
+  0%{opacity: 0;}
+  100%{opacity: 40%;}
+}
+@media screen  and (max-width: 1012px)
+{
+  .headsub{
+    display: none;
+  }
+}
+.head
+{
+  opacity: 0;
+    position: relative;
+    top: 30%;
+    animation: headanime 1s  2s;
+    color:beige;
+    font-size: 4rem;
+    line-height: 0.5rem;
+}
+@keyframes headanime
+{
+  0%{opacity: 0;}
+  100%{opacity: 75%;}
+}
+.headside
+{
+  opacity: 0;
+    position: relative;
+    top: 35%;
+    animation: headanime2 1s  2s;
+    color:beige;
+    font-size: 1.5rem;
+    margin-left: 20%;
+}
+@keyframes headanime2
+{
+  0%{opacity: 0;}
+  100%{opacity: 70%;}
+}
+@media screen  and (max-width: 570px)
+{
+  .headside{
+    top: 50%;
+  }
 }
 /* scrollbar */
 ::-webkit-scrollbar {
@@ -54,7 +114,7 @@ body,html
     letter-spacing: .15em; /* Adjust as needed */
    
     animation: 
-      typing 3.5s steps(30, end),
+      typing 2.5s steps(30, end),
       blink-caret .5s step-end infinite;
   }
   
@@ -79,6 +139,7 @@ body,html
   line-height: 55px;
   text-align: center;
   z-index: 1000;
+  font-family: "Quicksand", sans-serif;
 }
 
 .nav div.logo {
@@ -522,7 +583,7 @@ ul.social-icons {
   z-index: 100;
 }
 .fa-facebook {  
-  padding:10px 17px;
+  padding:4px 20px;
   -o-transition:.5s;
   -ms-transition:.5s;
   -moz-transition:.5s;
@@ -537,7 +598,8 @@ ul.social-icons {
 }
 
 .fa-reddit {
-  padding:10px 14px;
+  
+  padding:4px 14.5px;
   -o-transition:.5s;
   -ms-transition:.5s;
   -moz-transition:.5s;
@@ -552,8 +614,10 @@ ul.social-icons {
 }
 
 .fa-instagram {
+  margin-left: 7%;
+  margin-right: 7%;
   position: relative;
-  top: 7px;
+  top: 5px;
   padding:3px 5px;
   -o-transition:.5s;
   -ms-transition:.5s;
@@ -582,23 +646,11 @@ ul {
   list-style: none;
 }
 
-.fa-twitter {
-  padding:10px 6px;
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
-  transition: .5s;
-  background-color: transparent;
-  color:#00aced ;
-}
-.fa-twitter:hover {
-  color:white ;
-}
+
 
 
 .fa-linkedin {
-  padding:10px 4px;
+  padding:6px 17px;
   -o-transition:.5s;
   -ms-transition:.5s;
   -moz-transition:.5s;
@@ -613,8 +665,8 @@ ul {
 }
 .aboutcard
 {
-  display: flex; width: 87%; margin-left: auto;margin-right: auto;flex-direction: row;overflow: hidden;
-  font-size: 18px; height: auto;
+  display: flex; width: 87%; margin-left: auto;margin-right: auto;flex-direction: row;
+  font-size: 20px; height: auto;
 }
 @media screen and (max-width:768px)
 {
@@ -625,17 +677,24 @@ ul {
 }
 .abtimg
 {
-  width: 30%;
+  width: 60%;
   height: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  margin-top: -120px;
+  z-index: 100;
+  left: 200px;
+ 
 }
 @media screen and (max-width:768px)
 {
   .abtimg
   {
-    width: 60%;
+    width: 80%;
+    left: 0px;
+    margin-top: auto;
   }
   
 }
@@ -650,7 +709,7 @@ width: 60%;
 }
 .abtcont
 {
-  text-align: justify;
+  text-align: left;
   margin-top: 5%;
 }
 @media screen and (max-width:768px)
@@ -993,6 +1052,36 @@ width: 60%;
 @media screen and (max-width: 768px)
 {
   .aboutcard1
+  {
+    flex-direction: column;
+  }
+}
+.flin
+{
+  display: flex;
+  flex-direction: column;
+  font-size: 13px; text-align: left;
+  
+}
+.qwerty1
+{
+  width: 40%;
+}
+
+@media screen and (max-width: 768px)
+{
+  .qwerty1
+  {
+    width: 100%;
+  }
+}
+.flout
+{
+  display: flex;flex-direction: row;
+}
+@media screen and (max-width: 815px)
+{
+  .flout
   {
     flex-direction: column;
   }

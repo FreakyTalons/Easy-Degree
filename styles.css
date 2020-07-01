@@ -45,6 +45,7 @@ body {
     margin: 5px;
     background: #367496;
     padding: 20px 10px;
+    border-radius: 25px;
 }
 
 .wrapper .our-team .team-member .member-img {

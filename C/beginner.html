@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Learn">
+  <meta name="keywords" content="ed learning pages, learn python">
+  <meta name="author" content="Pragati">
+  <title>ED | Material</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/571f32a354.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header id="home">
+    <div class="container">
+      <div id="branding">
+        <img class="logo" src="images/logo.png" alt="Easy degree logo">
+        <h1><span class="highlight">Easy </span>Degree</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="index.html">Contents</a></li>
+          <li><a href="intro.html">Intro</a></li>
+          <li class="current"><a href="material.html">Depth</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="start">
+    <div class="container">
+      <h1>Beginner track</h1>
+    </div>
+  </section>
+
+
+  <input type="checkbox" id="check">
+  <label for="check">
+    <i class="fas fa-bars" id="btn"></i>
+  </label>
+
+  <div class="sidebar">
+    <h2>Contents</h2>
+    <ul>
+      <li><a href="#lorem1">C Compilers and IDE</a></li>
+      <li><a href="#lorem2">Components of a C program:</a></li>
+      <li><a href="#lorem3">Data Types and their Format Specifier:</a></li>
+      <li><a href="#lorem4">Input/ Output Commands: </a></li>
+      <li><a href="#lorem5">First C program:</a></li>
+      <li><a href="#lorem6">Quick extras</a></li>
+    </ul>
+  </div>
+
+  <section>
+    <h2 id="lorem1">C Compilers and IDE</h2>
+    <p>
+      A compiler transforms and translates a high-end language to machine (low level) understandable language.
+      The compiling process does basic translation mechanisms and also error detection. Basically, it translates
+      your code written in basic English to a language the machine can understand and perform according to the
+      given command.</p>
+
+    <p>To write this code you need a platform integrated with the compilers known as IDE (Integrated Development
+      Environment). Some examples of C IDEs are: </p>
+    <p> ❖ Code::Blocks: It is a free, open-source cross-platform IDE that supports multiple compilers
+      including GCC, Clang and Visual C++.</p>
+    <p>Download Link: http://www.codeblocks.org/downloads</p>
+    <p>Interface :</p>
+    <img class="image" src="images/beginner/interface.jpeg" alt="">
+    </p>
+    <p>❖ Eclipse: It is an integrated development environment used in computer programming. It contains a
+      base workspace and an extensible plug-in system for customizing the environment.</p>
+    <p>Download Link: http://www.eclipse.org/downloads/</p>
+    <p>Interface :</p>
+    </p>
+    <h2 id="lorem2">Components of a C program:</h2>
+    <p>As we are now all set to begin with our coding. Lets first discuss what are some important
+      components every C program contains</p>
+
+    <h4>Constants and Variables:</h4>
+    <p>
+      A variable is nothing but a name given to a storage area that our programs can manipulate.
+      Each variable in C has a specific type, which determines the size and layout of
+      the variable's memory; the range of values that can be stored within that memory; and the set of
+      operations that can be applied to it.
+    <p>There are some rules that are to be followed during construction of a variable:
+    <ul>
+      <li>-It can only contain 32 letters (alphabets, numbers, underscore)</li>
+      <li>-No special character/blanks except an underscore (‘_’) can be used in a variable</li>
+      <li>-The variable name must begin with an alphabet or underscore only.</li>
+      <li>-The name of variable can’t be a keyword.</li>
+    </ul>
+    </p>
+    <p> Example of some valid variable names: _emp_, Abc123, book_212 etc;</p>
+    <p>
+      Constants in C are the fixed values that are used in a program, and its value remains the same
+      during the entire execution of the program. Constants are also called literals. Constants can be
+      any of the data types. These are basically the values specified for a given variable at a particular
+      point of time.</p>
+    <p>ExamplesX=5 or y=10.34</p>
+    <p>Here x and y are the variable names and the values given to them i.e. 5 and 10.34 are the
+      constants specified to them.
+    </p>
+
+    <h4>Keywords: </h4>
+    <p>Keywords are predefined, reserved words in C language and each of which is associated with
+      specific features. These words help us to use the functionality of C language. They have special
+      meaning to the compilers.</p>
+    <p>Some examples of keyword are:
+      int, float, break, while, double continue, etc.</p>
+    <h4> Header Files:</h4>
+    <p>
+
+      A header file is a file with extension “.h” which contains C function declarations and macro
+      definitions to be shared between several source files. There are two types of header files: the files
+      that the programmer writes and the files that comes with your compiler.</p>
+    <p>
+      It is the most important part of the code and is usually written at the very beginning of the code.</p>
+    <p>
+      Including a header file gives access to all the keywords and pre-defined functions listed in the file.</p>
+    <p>
+      You request to use a header file in your program by including it with the C pre-processing</p>
+    <p>
+      directive #include.</p>
+    <p>
+      Syntax-</p>
+    <p>
+      #include<header_file>
+    </p>
+    <p>
+      Some mostly used header files in C are:</p>
+    <p>
+      <img class="image" src="images/beginner/header.jpeg" alt="">
+    </p>
+    <h2 id="lorem3">Data Types and their Format Specifier:</h2>
+    <p>Each variable in C has an associated data type. Each data type requires different amounts of
+      memory and has some specific operations which can be performed over it.</p>
+    <p>Following are the examples of some very common data types used in C:</p>
+    <ul>
+      <li>❖ char: The most basic data type in C. It stores a single character and requires a single byte
+        of memory in almost all compilers.</li>
+      <li>
+        ❖ int: As the name suggests, an int variable is used to store an integer.</li>
+      <li>❖ float: It is used to store decimal numbers (numbers with floating point value) with single
+        precision.</li>
+      <li>❖ double: It is used to store decimal numbers (numbers with floating point value) with double
+        precision.</li>
+    </ul>
+    <p>The format specifiers are used in C for input and output purposes. Using this concept, the compiler
+      can understand that what type of data is in a variable during taking input and printing data.
+      A list of data types and their format specifiers:</p>
+
+
+    <img class="image" src="images/beginner/1dt.jpeg" alt="">
+    <img class="image" src="images/beginner/2dt.jpeg" alt="">
+
+
+
+    <h2 id="lorem4">Input/ Output Commands:</h2>
+    <p> When we say Input, it means to feed some data into a program. An input can be given in the form
+      of a file or from the command line and an Output, means to display some data on screen, printer,
+      or in any file. C programming provides a set of built-in functions to read the given input and functions
+      to output the data on the computer screen.</p>
+    <h4>printf() Function:</h4>
+    <p>In C programming, printf() is one of the main output function. The function sends formatted output
+      to the screen.</p>
+    <p>Syntax: printf(“ out put data “);</p>
+    <p> Example:</p>
+    <p>printf(“ First statement “); // it will give the output as the text included in the quotes.</p>
+    <p> To print the value of a variable or include variables in your output you have to specify the format
+      specifier for the data type.</p>
+    <p>Syntax: printf(“ output data characters format_specifier “,variable_name);</p>
+    <p> Example:</p>
+    <p>
+    <pre>
+        int x=10;
+        printf(“The value of x is %d”,x);
+
+        Output: The value of x is 10
+    </pre>
+    </p>
+
+    <h4>scantf() Function:</h4>
+    <p> In C programming, scanf() is one of the commonly used function to take input from the user.</p>
+    <p>The scanf() function reads formatted input from the standard input such as keyboards.</p>
+    <p>To read the value of a variable you need to specify the format specifier of the variable data type
+      and then the variable name preceded by the “&” sign.</p>
+    <p>Syntax : scanf(“Format_specifier”,&variable_name);</p>
+    <p>&variable_name gives the address of the variable and the input value is stored at that address.</p>
+    <p>Example:</p>
+    <p>
+    <pre>
+        float x;
+        printf(“Enter the value of x”);
+        scanf(“%f”,&x);
+      </pre>
+    </p>
+    <p> When this statement is run, it will ask the user to input the value of float variable x.</p>
+
+    <h2 id="lorem5">First C program:</h2>
+    <p>After studying the components of a C program, we are all set for First code. Before that let’s go
+      through some rules that you should keep in mind whenever we are writing a code:
+      -Each instruction should be written as a separate statement</p>
+    <ul>
+      <li></li>
+      <li></li>
+      <li>-C follows sequential execution, so statements should be written in order you want them to be
+        followed</li>
+      <li>-insert blank spaces between words.</li>
+      <li>-C is case sensitive and most of the in-built commands are in lowercase</li>
+      <li>-Every instruction or statement should be terminated with a semi-colon (“;”);</li>
+    </ul>
+    <p> Thus, for our 1st program we are going to print the statement “HELLO WORLD!!”;</p>
+    <img class="image" src="images/beginner/1prog.jpeg" alt="">
+
+    <h2 id="lorem6">Extras in a glance</h2>
+    <h4>Errors in C:</h4>
+    <p>Error is an illegal operation performed by the user which results in abnormal working of the
+      program.</p>
+    <p>Programming errors often remain undetected until the program is compiled or executed. Some of
+      the errors inhibit the program from getting compiled or executed. The most common errors can be
+      broadly classified as follows:</p>
+    <ul>
+      <li> ❖ Syntax errors: Errors that occur when you violate the rules of writing C syntax are known as
+        syntax errors. This compiler error indicates something that must be fixed before the code
+        can be compiled. All these errors are detected by compiler and thus are known as compiletime errors. Example:
+        <ul>
+          <li>-Missing Parenthesis (})</li>
+          <li>-Printing the value of variable without declaring it</li>
+          <li>-Missing semicolon</li>
+        </ul>
+      </li>
+      <li>❖ Run-time Errors: Errors which occur during program execution(run-time) after successful
+        compilation are called run-time errors. One of the most common run-time errors is division
+        by zero also known as Division error. These types of error are hard to find as the compiler
+        doesn’t point to the line at which the error occurs.</li>
+      <li>❖ Logical Errors: On compilation and execution of a program, desired output is not obtained
+        when certain input values are given. These types of errors which provide incorrect output
+        but appears to be error free are called logical errors. These are one of the most common
+        errors done by beginners of programming.</li>
+      <li>❖ Semantic errors: This error occurs when the statements written in the program are not
+        meaningful to the compiler.
+        Example:
+        a+b=c;</li>
+    </ul>
+    <h4>Comments in C:</h4>
+    <p> Comments are statements that are not executed by the compiler and interpreter. In programming,
+      a comment is a programmer-readable explanation or annotation in the source code of a program. It
+      is a good practice as a programmer to write comments as it makes a program more readable and
+      error finding become easier.</p>
+    <p>In C there are two types of comments:</p>
+    <ul>
+      <li>-Single line comment : Represented as // double forward slash. It applies comment to a single line
+        only. Example:
+        <pre>int emp_no=1245; // the employee no. is 1245</pre></li>
+      <li> -Multi-line comment : Represented as /* any_text */ start with forward slash and asterisk (/*) and
+        end with asterisk and forward slash (*/). It is used to denote multi-line comment. Example:
+      <pre>
+        /*Comment starts
+        . . .
+        Data/text
+        . . .
+        Comment ends*/
+      </pre></li>
+
+    </ul>
+    <h4>Escape Sequence in C:</h4>
+    <p>Generally, an escape sequence begins with a backslash ‘\’ followed by a character or characters. it
+      has a special meaning to the compiler. Escape sequences are used to format the output text and
+      are not generally displayed on the screen. Each escape sequence has its own predefined function.
+      Some common and useful escape sequences you can take note of are:</p>
+
+      <img class="image" src="images/beginner/escape.jpeg" alt="">
+
+      <p>Escape sequences store only 1 byte in memory and can be used the same way we print any
+        output on Console by inserting them wherever required in the printf function.</p>
+
+    <h4>Operators in C:</h4>
+    <p>C language supports a rich set of built-in operators. An operator is a symbol that tells the compiler
+      to perform a certain mathematical or logical manipulation. Operators are used in programs to
+      manipulate data and variables.
+      C operators can be classified into following types:
+      </p>
+      <ul>
+        <li>❖ Arithmetic operators</li>
+        <li>❖ Relational operators</li>
+        <li>❖ Logical operators</li>
+        <li>❖ Bitwise operators</li>
+        <li>❖ Assignment operators</li>
+        <li>❖ Conditional operators</li>
+        <li>❖ Special operators</li>
+      </ul>
+      <h5>1. Arithmetic Operators</h5>
+    <p>
+      All the basic arithmetic operators are supported in C.</p>
+      <img class="image" src="images/beginner/add.jpeg" alt="">
+      <h5>2. Relational Operators </h5>
+    <p>Operators used to compare the two operands. Such as:</p>
+    <img class="image" src="images/beginner/relational.jpeg" alt="">
+    <h5>3. Logical Operators </h5>
+    <p>C language supports following 3 logical operators.</p>
+    <ul>
+      <li>❖ Logical AND (&&):</li>
+      <p><img class="image" src="images/beginner/and.jpeg" alt=""></p>
+      <li>❖ Logical OR (||):</li>
+      <p><img class="image" src="images/beginner/or.jpeg" alt=""></p>
+      <li>❖ NOT(!):</li>
+      <p><img class="image" src="images/beginner/not.jpeg" alt=""></p>
+    </ul>
+    <h5>4. Assignment Operators</h5>
+    <p>Used to assign values to variables. Example</p>
+    <img class="image" src="images/beginner/assignment.jpeg" alt="">
+    </li>
+    <h5>5. Special Operators </h5>
+    <img class="image" src="images/beginner/spop.jpeg" alt="">
+    <h4>Program showing use of Operators:</h4>
+    <p>Now that we have learned about all the operators and data types and variables. Let’s write a code
+      performing different arithmetic operations on variables.</p>
+      <img class="image" src="images/beginner/2prog.jpeg" alt="">
+  </section>
+
+</body>
+
+</html>

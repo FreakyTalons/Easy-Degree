@@ -2,52 +2,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Quicksand", sans-serif;
     /* 'Nanum Pen Script', cursive; */
-    
+
     /* font-family: 'Roboto Mono', monospace; */
 }
 
-body{
+body {
     background-image: url("images/photo.jpeg");
     background-repeat: no-repeat;
     background-attachment: fixed;
-  background-size: cover;
+    background-size: cover;
     color: white;
 }
 
 
-.wrapper{
+.wrapper {
     margin-top: 60px;
     text-align: center;
     width: 85%;
     margin-left: 7.5%;
 }
 
-.wrapper h1{
+.wrapper h1 {
     font-size: 48px;
     margin-bottom: 25px;
 }
 
-.wrapper .our-team{
+.wrapper .our-team {
     display: flex;
     width: auto;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.wrapper .our-team .team-member{
+.wrapper .our-team .team-member {
     width: 250px;
     margin: 5px;
     background: #367496;
     padding: 20px 10px;
 }
 
-.wrapper .our-team .team-member .member-img{
+.wrapper .our-team .team-member .member-img {
     background: #8ebfda;
     max-width: 190px;
     width: 100%;
@@ -59,13 +59,13 @@ body{
     position: relative;
 }
 
-.wrapper .our-team .team-member .member-img img{
+.wrapper .our-team .team-member .member-img img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
 }
 
-.wrapper .our-team .team-member h3{
+.wrapper .our-team .team-member h3 {
     text-transform: uppercase;
     font-size: 20px;
     line-height: 18px;
@@ -73,22 +73,41 @@ body{
     margin: 15px 0 0;
 }
 
-.wrapper .our-team .team-member span{
+.wrapper .our-team .team-member span {
     font-size: 18px;
 }
 
-.wrapper .our-team .team-member p{
+.wrapper .our-team .team-member p {
     margin-top: 20px;
     font-size: 15px;
     line-height: 20px;
 }
 
-.wrapper .our-team .team-member .social-media{
+.our-team .team-member .member-img .social-media{
     position: absolute;
     top: 5px;
     left: 5px;
+    background: rgba(0,0,0,0.65);
     width: 95%;
     height: 95%;
-    background: rgba(0,0,0,0.65);
-
-}
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+     transition: all 0.5s ease;
+  }
+  
+  .our-team .team-member .member-img .social-media .item{
+    margin: 0 10px;
+  }
+  
+  .our-team .team-member .member-img .social-media .fab{
+    color: #48aed6;
+    font-size: 20px;
+    padding: 5px;
+  }
+  
+  .our-team .team-member .member-img:hover .social-media{
+    transform: scale(1);
+  }

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Learn">
+	<meta name="keywords" content="ed learning pages, learn python">
+  	<meta name="author" content="Pragati">
+    <title>ED | Material</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/571f32a354.js" crossorigin="anonymous"></script>  
+</head>
+  <body>
+    <header  id="home">
+      <div class="container">
+        <div id="branding">
+          <img class="logo" src="images/logo.png" alt="Easy degree logo">
+          <h1><span class="highlight">Easy </span>Degree</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="index.html">Contents</a></li>
+            <li><a href="intro.html">Intro</a></li>
+            <li class="current"><a href="material.html">Depth</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="start">
+      <div class="container">
+          <h1>Intermediate track</h1>
+      </div>
+    </section>
+
+
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+    </label>
+
+    <div class="sidebar">
+        <h2>Contents</h2>
+        <ul>
+            <li><a href="#lorem1">Ascii and operations</a></li>
+            <li><a href="#lorem2">Comments and escape sequences</a></li>
+            <li><a href="#lorem3">Greatest of 3 numbers and hello world</a></li>
+            <li><a href="#lorem4">Leap year and palindrome</a></li>
+            <li><a href="#lorem5">Size of and swap</a></li>
+        </ul>
+    </div>
+
+    <section>
+        <h2 id="lorem1"> 1 . Ascii and operations</h2>
+        <p>
+          <h2>ASCII.c</h2>
+          
+          <code>
+            #include &lt;stdio.h&gt;
+              char main()
+              {
+                  char ch;
+                  printf("Enter any character:");
+              
+                  scanf("%c", &ch);
+              
+                  printf("ASCII value of character %c is: %d", ch, ch);
+              
+              }
+          </code>
+        
+      </p>
+      <p>
+        <h2>Operations.c</h2>
+        
+          <code>
+              #include &lt;stdio.h&gt;
+
+              void main()
+              {
+                  int a,b,c;
+                  printf("Enter 2 nos.: ");
+                  scanf("%d%d",&a,&b);
+                  c=a+b;
+                  printf("a + b = %d\n",c);
+                  c=a-b;
+                  printf("a - b = %d\n",c);
+                  c=a*b;
+                  printf("a x b = %d\n",c);
+                  c=a/b;
+                  printf("a / b = %d\n",c);
+              }
+          </code>
+        
+      </p>
+        <h2 id="lorem2">2 . Comments and escape sequences</h2>
+        <p>
+          <h2>comments.c</h2>
+          
+            <code>
+              #include &lt;stdio.h&gt;
+
+                void main()
+                {
+                    printf("Display use of comments.\n");
+                
+                    //this is a single line comment
+                    printf("Comments are not displayed in output\n");
+                
+                    /*This
+                    is a
+                    multi line
+                    comment*/
+                }
+            </code>
+          
+        </p>
+        <p>
+          <h2>escape_seq.c</h2>
+          
+            <code>
+              #include &lt;stdio.h&gt;
+
+                void main()
+                {
+                    printf("Escape Sequence");
+                
+                    printf("\nThis is in new line");
+                
+                    printf("\nHere is tab \t space");
+                
+                    printf("\nSpecial symbol : \\ \a");
+                }
+            </code>
+          
+        </p>
+        <h2 id="lorem3">3 . Greatest of 3 numbers and hello world</h2>
+        <p>
+          <h2>greatest_of_3.c</h2>
+          
+            <code>
+              #include &lt;stdio.h&gt;
+
+                void main()
+                {
+                   int num1,num2,num3;
+                
+                   printf("\nEnter value of num1, num2 and num3:");
+                   scanf("%d %d %d",&num1,&num2,&num3);
+                
+                   if((num1>num2)&&(num1>num3))
+                      printf("\n Number1 is greatest");
+                   else if((num2>num3)&&(num2>num1))
+                      printf("\n Number2 is greatest");
+                   else
+                      printf("\n Number3 is greatest");
+                
+                }
+            </code>
+          
+        </p>
+        <p>
+          <h2>hello_world.c</h2>
+          
+            <code>
+              #include &lt;stdio.h&gt;
+
+                void main()
+                {
+                    printf("HELLO WORLD !");
+                }
+            </code>
+          
+        </p>
+        <h2 id="lorem4">4 . Leap year and palindrome</h2>
+        <p>
+          <h2>leap_yr.c</h2>
+          
+            <code>
+              #include  &lt;stdio.h&gt;
+
+                void main()
+                {
+                    int yr;
+                
+                    printf("Enter year: ");
+                    scanf("%d",&yr);
+                
+                    if(yr%4 == 0)
+                    {
+                        if(yr%100 == 0)
+                        {
+                            if (yr%400 == 0)
+                                printf("%d is a Leap Year", yr);
+                            else
+                                printf("%d is not a Leap Year", yr);
+                        }
+                        else
+                            printf("%d is a Leap Year", yr);
+                    }
+                    else
+                        printf("%d is not a Leap Year", yr);
+                
+                }
+            </code>
+          
+        </p>
+        <p>
+          <h2>palindrome.c</h2>
+          
+            <code> 
+                #include  &lt;stdio.h&gt;
+
+                  void main()
+                  {
+                    int num, reverse_num=0, rem,temp;
+                    printf("Enter an integer: ");
+                    scanf("%d", &num);
+                  
+                    temp=num;
+                    while(temp!=0)
+                    {
+                        rem=temp%10;
+                        reverse_num=reverse_num*10+rem;
+                        temp/=10;
+                    }
+                    if(reverse_num==num)
+                        printf("%d is a palindrome number",num);
+                    else
+                        printf("%d is not a palindrome number",num);
+                  
+                  }
+            </code>
+          
+        </p>
+        <h2 id="lorem5">5 . Size of and swap</h2>
+        <p>
+          <h2>size_of.c</h2>
+          
+            <code>
+              #include &lt;stdio.h&gt;
+
+                void main()
+                {
+                    printf("Size of char: %ld byte\n",sizeof(char));
+                    printf("Size of int: %ld bytes\n",sizeof(int));
+                    printf("Size of float: %ld bytes\n",sizeof(float));
+                    printf("Size of double: %ld bytes", sizeof(double));
+                
+                }
+            </code>
+          
+        </p>
+        <p>
+          <h2>swap.c</h2>
+          
+            <code>
+              #include &lt;stdio.h&gt;
+
+                void main()
+                {
+                    int a,b,c;
+                    printf("Enter 2 nos.: ");
+                    scanf("%d%d",&a,&b);
+                    printf("BEFORE SWAPPING\n");
+                    printf("a = %d\n",a);
+                    printf("b = %d\n",b);
+                    c=a;
+                    a=b;
+                    b=c;
+                    printf("AFTER SWAPPING\n");
+                    printf("a = %d\n",a);
+                    printf("b = %d\n",b);
+                }
+            </code>
+          
+        </p>
+    </section>
+  </body>
+</html>

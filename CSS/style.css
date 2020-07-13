@@ -86,7 +86,7 @@ body,html
 @media screen  and (max-width: 570px)
 {
   .headside{
-    top: 50%;
+    display: none;
   }
 }
 /* scrollbar */

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Learn">
+  <meta name="keywords" content="ed learning pages, learn python">
+  <meta name="author" content="Pragati">
+  <title>ED | Material</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/571f32a354.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header id="home">
+    <div class="container">
+      <div id="branding">
+        <img class="logo" src="images/logo.png" alt="Easy degree logo">
+        <h1><span class="highlight">Easy </span>Degree</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="index.html">Contents</a></li>
+          <li><a href="intro.html">Intro</a></li>
+          <li class="current"><a href="material.html">Depth</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="start">
+    <div class="container">
+      <h1>Beginner track</h1>
+    </div>
+  </section>
+
+
+  <input type="checkbox" id="check">
+  <label for="check">
+    <i class="fas fa-bars" id="btn"></i>
+  </label>
+
+  <div class="sidebar">
+    <h2>Contents</h2>
+    <ul>
+      <li><a href="#lorem1">About It</a></li>
+      <li><a href="#lorem2">Components of a C program:</a></li>
+      <li><a href="#lorem3">Data Types and their Format Specifier:</a></li>
+      <li><a href="#lorem4">Input/ Output Commands: </a></li>
+      <li><a href="#lorem5">First C program:</a></li>
+      <li><a href="#lorem6">Quick extras</a></li>
+    </ul>
+  </div>
+
+  <section>
+    <h2 id="lorem1">About It :-</h2>
+    <p>
+
+      <li>● R is a simple and effective language which is used for statistical analysis,
+        reporting and graphical representation of data.</li>
+      <li>● R was created by Ross Ihaka and Robert Gentleman at the University of Auckland,
+        New Zealand.</li>
+      <li>● R is the best programming language referred by data scientists because of its
+        data analysis properties.</li>
+      <li>● If you are trying to understand the R programming language as a beginner,
+        EasyDegree will give you enough understanding on almost all the concepts of the
+        language from where you can take yourself to higher levels of expertise..</li>
+    </p>
+
+
+    <h2 id="lorem2">R Basic Syntax :-</h2>
+    <p>As a convention, we will start learning R programming by writing a "Hello World!"
+      program. Depending on the needs, you can program either at R command prompt or you
+      can use an R script file to write your program.</p>
+    <li>○ R Command Prompt --</li>
+    <li>○ R command prompt is the default prompt you will see on your screen
+      when you open R software.</li>
+    <li>○ In R command you can type your statements/codes next to > sign.</li>
+    <li>○ R command allows you to enter the statement and when you press enter
+      key it will show the output of the statement you just entered in very next
+      line of your statement.</li>
+
+    <p>● R Script File --</p>
+    <li> ○ Usually, It is more preferable to do your programming by writing your
+      programs in script files and then you execute those scripts at your
+      command prompt with the help of R interpreter called Rscript.</li>
+    <li>R Script files are saved as .R extension.</li>
+    <li>Here you can view, edit and save your code as .R extension which is
+      unlikely in command prompt.</li>
+    <li>To open the R script, go to the file option at the top left corner and choose
+      the new script. A new window will appear on your screen name R editor.</li>
+    <li>R Editor allows you to type your entire code/statements in one go and
+      when you run those scripts outputs will be shown in R command but
+      whereas in R command you can only type line by line statements and after
+      every statement you entered you’ll get its output.
+      3</li>
+    <p>Comments --</p>
+    <p>Comments are explanations of code which are very beneficial for the
+      programmers as it increases the understandability of the code for any other user.</p>
+    <p>Comments generally include information like what and how the program is
+      executed. Comments are meant for the user and are ignored by the compiler.
+      In R, hash(#) is used for making a comment. Anything written after using # will
+      be ignored by the compiler.</p>
+    <p>For example-
+      # My first comment in R Programming</p>
+
+    <h2 id="lorem3">Data Types in R :-</h2>
+    <p>Normally, while doing programming in any programming language, you need to use
+      various variables to store various information. Variables are nothing but reserved
+      memory locations to store values. This means that, when you create a variable you
+      reserve some space in memory.
+    </p>
+    <p>In variance to other programming languages like C and java in R, the variables are not
+      declared as some data type. The variables are assigned with R-Objects and the data
+      type of the R-object becomes the data type of the variable. There are many types of
+      R-objects. Some of them are –</p>
+
+    <li>Vectors</li>
+    <li>Lists</li>
+    <li>Matrices</li>
+    <li>Arrays</li>
+    <li>Factors</li>
+    <li>Data Frames</li>
+    <p>Vectors Data type :-
+      Vector is a basic data structure in R. It contains elements of the same type. The
+      simplest of the objects is the Vector Object. It is further classified into 6 Data types of
+      these atomic vectors. The other R-objects are built upon these. The 6 atomic data types
+      are :-
+    </p>
+    <li>Numeric</li>
+    <li>Integer</li>
+    <li>Complex</li>
+    <li>Logical</li>
+    <li>Character</li>
+    class()” is used to find the data type of a variable
+
+    <h2>1. VECTORS </h2>
+    <p>Vectors consist of data elements of the same data type. The data elements of a
+      vector are called components. When you want to create a vector with more than
+      one element, you should use c() function which means to combine the elements
+      into a vector.</p>
+    <h2>2. LISTS</h2>
+    <p>A list is an R-object which can contain data elements of different data types likenumbers, integers, vectors,
+      characters, matrix and even a list inside it.
+      To create a list we have to use a function called list().
+    </p>
+    <h2>3. MATRICES :-</h2>
+    <p>Matrix is a collection of data elements which are arranged in a 2 Dimensional
+      rectangular layout. In R, to create a matrix we use a function called matrix().
+      The basic syntax to create a matrix is:
+      matrix(data, nrow, ncol)
+      where, data will be entered by the user
+      nrow stands for number of rows
+      ncol stands for number of columns</p>
+    <h2>4. ARRAYS :-
+    </h2>
+    <p>While matrices are confined to two dimensions, arrays can be of any number of
+      dimensions. The array function takes a dim attribute which creates the required
+      number of dimensions. In the below example we create an array with two
+      elements which are 3x3 matrices each.
+      To create an array array() function is used</p>
+    <h2>5. FACTORS :-</h2>
+    <p>Factors are the r-objects which are created using a vector. It stores the vector
+      along with the distinct values of the elements in the vector as labels. The labels
+      are always character irrespective of whether it is numeric or character or Boolean
+      etc. in the input vector. They are useful in statistical modeling.
+      Factors are created using the factor() function.The nlevels function gives the
+      count of levels.
+    </p>
+    <h2>6. DATA FRAMES :-</h2>
+    <p>Data frames are tabular data objects. Unlike a matrix in a data frame each
+      column can contain different modes of data. The first column can be numeric
+      while the second column can be character and third column can be logical. It is a
+      list of vectors of equal length.
+      10
+      Data Frames are created using the data.frame() function</p>
+    <h2>Variables :-</h2>
+
+    <p>Variables are names which are used to hold data. Each variable name needs to
+      be unique. A variable name can contain alphabets, numbers, dots, underscores.
+      Variable names can not contain special characters other than dots and underline
+      & variable names can not begin with numbers and underscores.</p>
+    <p>Examples of Valid Variables:
+      newvariable,
+      new_variable.,
+      .newVariable</p>
+    <p>Examples of Invalid Variables:
+      11
+      5newVariable,
+      _newVariable,
+      .5newVariable</p>
+    <p>The values of the variables can be printed using print() or cat() function. The
+      cat() function combines multiple items into a continuous print output.
+      For example:
+      print(a)</p>
+    <h2>Variable Assignment :-</h2>
+    <p>The variables can be assigned values using leftward, rightward and equal to
+      operator.</p>
+    <h2>Data Type of a Variable :-
+
+    </h2>
+    <p>In R, a variable itself is not declared of any data type, rather it gets the data type
+      of the R - object assigned to it. So R is called a dynamically typed language,
+      which means that we can change a variable’s data type of the same variable
+      again and again when using it in a program.</p>
+
+    <h2>Finding Variables :-</h2>
+    <p>To know all the variables currently available in the workspace we use the ls()
+      function. Also the ls() function can use patterns to match the variable names.
+      print(ls())</p>
+    <p>When we execute the above code, it produces the output depending on what
+      variables are declared in your environment it will show them all.
+      The ls() function can use patterns to match the variable names.</p>
+    <p>The variables starting with dot(.) are hidden, they can be listed using "all.names =
+      TRUE" argument to ls() function.
+    </p>
+    <h2>Deleting Variables :-
+    </h2>
+    <p> Variables can be deleted by using the rm() function. Below we delete the variable
+      var_1. On printing the value of the variable error is thrown.</p>
+    <h2 id="lorem4">Operators :-
+    </h2>
+    An operator is a symbol that tells the compiler to perform specific mathematical
+    or logical manipulations. R language is rich in built-in operators and provides
+    following types of operators.
+    There are five main categories of Operators in R programming language.
+    <li>Arithmetic Operators</li>
+    <li>Relational Operators</li>
+    <li>Logical Operators</li>
+    <li>Assignment Operators</li>
+    <li>Miscellaneous Operators</li>
+
+    <h2>Arithmetic Operators :-</h2>
+
+    Arithmetic Operators are used to accomplish arithmetic operations. They can be
+    operated on the basic data types Numericals, Integers, Complex Numbers.
+
+    <h2>Relational Operators :-</h2>
+
+    Following are the six relational operations R programming language supports.
+    The output is boolean (TRUE or FALSE) for all of the Relational Operators in R
+    programming language.
+
+    <h2>Logical Operators :-</h2>
+    <p>This operator is valid only to vectors of type logical, number or complex numbers.
+      All figures greater than 1 are considered to be logical value TRUE..
+      Logical Operators in R programming language work only the basic data types
+      logical, numeric and complex and vectors of these basic data types.
+      Each element of the first vector is compared with the corresponding element of
+      the second vector. The result of comparison is a Boolean value.
+    </p>
+    <h2>Assignment Operators :-</h2>
+    <p>These operators are used to assign values to vectors</p>
+    <h2>Miscellaneous Operators :-</h2>
+    <p>These operators are used for specific purposes and not general mathematical or
+      logical computation.
+    </p>
+    <h2>Decision making :-
+    </h2>
+    <p>Decision making structures require the programmer to specify one or more conditions
+      to be evaluated or tested by the program, along with a statement or statements to be
+      executed if the condition is determined to be true, and optionally, other statements to be
+      executed if the condition is determined to be false.
+      R provides the following types of decision making statements.</p>
+    <h2>If Statement :-</h2>
+    The simplest form of decision controlling statement for conditional execution is the 'if'
+    statement. If the Boolean expression evaluates to be true, a block of statements are executed else, the execution
+    flow continues with the execution of statements after if
+    statement.
+
+    <h2>If-Else Statement :-
+    </h2>
+    In this type of statement the 'if' statement is usually followed by an optional 'else'
+    statement that gets executed when the Boolean expression becomes false.
+    <h2>Switch Statement :-
+
+    </h2>
+    A switch statement permits a variable to be tested in favor of equality against a list of
+    case values. In the switch statement, for each case the variable which is being switched
+    is checked
+    <h2>Loops :-</h2>
+    In some situations there might be need to execute a set of code several number of
+    times. In general, statements are executed sequentially. The first statement in a
+    function is executed first, followed by the second, and so on.
+    Programming languages provide various control structures that allow for more
+    complicated execution paths.
+    A loop statement allows us to execute a statement or group of statements multiple
+    times
+    <h2>Loop Control Statements :-
+    </h2>
+    Loop control statements change execution from its normal sequence. When execution
+    leaves a scope, all automatic objects that were created in that scope are destroyed.
+    <h2>Functions :-
+    </h2>
+    A function is a set of instructions organized together to perform a specific task. R
+    provides a large number of in-built functions and the user can also create their own
+    functions.
+    <p>In R, a function is an object so the R interpreter is able to pass control to the function,
+      along with arguments that may be necessary for the function to accomplish the actions.
+      The function in turn performs its task and returns control to the interpreter as well as
+      any result which may be stored in other objects.</p>
+
+    <ul>
+      <li>Function Definition :-
+        An R function is created by using the keyword function.</li>
+      <li>Function Components :-
+        The different parts of a function are -
+      <li>Function Name :- function is the real name of the function with which you can call
+        it in some other part of the program. It is stored as an object with this name
+        given to it.</li>
+      <li>Arguments :- When a function is invoked, you pass a value to the argument.
+        Arguments are optional; that is, a function may contain no arguments. Also
+        arguments can have default values.</li>
+      <li>Function Body :- It may contain a set of statements which specifies what the
+        function does and how it will work along with its use.</li>
+      <li>Return Value :- The return value of a function is the last expression in the function
+        body to be evaluated.</li>
+      </li>
+      <li>R-Function :-
+        R programming language provides functions to group a set of instructions and form a
+        task. There are two types of functions in R language. They are:
+      <li>Built-in R functions</li>
+      <li>User defined R functions</li>
+      </li>
+
+    </ul>
+    <p>Built-in R functions :-</p>
+    R has many in-built functions which can be directly called in the program without
+    defining them first. Those functions are already defined within the function's body and
+    they are kept somewhere within the packages or libraries of R language.
+    <p>As R programming language has been built for data analytics, most of the commonly
+      used analytical tasks are provided by R as built-in functions.
+      Simple examples of built-in functions are seq(), mean(), max(), sum(x) and paste(...) etc.
+      They are directly called by user written programs. You can refer to the most widely used
+      R functions.</p>
+
+    <p>User-defined Function :-</p>
+    We can create user-defined functions in R. They are specific to what a user wants and
+    once created they can be used like the built-in functions. Below is an example of how a
+    function is created and used.
+
+    <h2>CALLING A FUNCTION WITH ARGUMENT VALUES (BY POSITION AND BY NAME) :-
+
+    </h2>
+    <p>The arguments to a function call can be supplied in the same sequence as defined in
+      the function or they can be supplied in a different sequence but assigned to the names
+      of the arguments.</p>
+    <h2>CALLING A FUNCTION WITH DEFAULT ARGUMENT :-
+    </h2>
+    <p> You can define the value of the arguments in the function definition and call the
+      function without supplying any argument to get the default result. But we can also call
+      such functions by supplying new values of the argument and get a non default result.
+    </p>
+    <h2>LAZY EVALUATION OF FUNCTION :-
+    </h2>
+    <p>Arguments to functions are evaluated lazily, which means so they are evaluated only
+      when needed by the function body.</p>
+
+    <h2 id="lorem5">Strings :-
+    </h2>
+    <p>Any value written within a pair of single quote or double quotes in R is treated as a
+      string. Internally R stores every string within double quotes, even when you create them
+      with a single quote.
+      Rules Applied in String Construction :-
+    </p>
+    <li>The quotes at the beginning and end of a string should be both double quotes or
+      both single quote. They can not be mixed.</li>
+    <li>Double quotes can be inserted into a string starting and ending with single quote.</li>
+    <li>Single quote can be inserted into a string starting and ending with double quotes.</li>
+    <li>Double quotes can not be inserted into a string starting and ending with double
+      quotes.</li>
+    <li>Single quote can not be inserted into a string starting and ending with a single
+      quote.</li>
+    <h2>String Manipulation :-
+
+    </h2>
+    <p>CONCATENATING STRINGS - PASTE() FUNCTION :-
+      many strings in R are combined using the paste() function. It can take any number of
+      arguments to be combined together.</p>
+    <h2>Following is the description of the parameters used −</h2>
+    <p>... represents any number of arguments to be combined.</p>
+    sep represents any separator between the arguments. It is optional.
+    collapse is used to eliminate the space in between two strings. But not the space
+    within two words of one string
+
+    <h2>FORMATTING NUMBERS & STRINGS - FORMAT() FUNCTION
+    </h2>
+    <p> Numbers and strings can be formatted to a specific style using format() function.
+    </p>
+  </section>
+
+</body>
+
+</html>

@@ -11,6 +11,18 @@
 
   /* font-family: 'Roboto Mono', monospace; */
 }
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 1rem;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #2b2b2b;
+  border-radius: 50px;
+}
+
 .bt {
   float: center;
   position: relative;

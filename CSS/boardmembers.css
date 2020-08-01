@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,700");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  /* 'Nanum Pen Script', cursive; */
+
+  /* font-family: 'Roboto Mono', monospace; */
+}
+.bt {
+  float: center;
+  position: relative;
+  border: none; /*delete the default one*/
+  border: 3px solid white; /*add my own border */
+  padding: 10px 20px 10px 20px;
+  background: #3e9ad5;
+  color: white;
+  font-size: 25px;
+  font-weight: 900;
+  border-radius: 20px;
+  transition: ease 0.3s;
+  cursor: pointer;
+}
+.bt:hover {
+  transform: scale(1.1);
+}
+body {
+  background-image: url("../images/photo.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+}
+
+.wrapper {
+  margin-top: 60px;
+  text-align: center;
+  width: 85%;
+  margin-left: 7.5%;
+}
+
+.wrapper h1 {
+  font-size: 48px;
+  margin-bottom: 25px;
+}
+
+.wrapper .our-team {
+  display: flex;
+  width: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.wrapper .our-team .team-member {
+  width: 250px;
+  margin: 5px;
+  background: #367496;
+  padding: 20px 10px;
+  border-radius: 25px;
+}
+
+.wrapper .our-team .team-member .member-img {
+  background: #8ebfda;
+  max-width: 190px;
+  width: 100%;
+  height: 190px;
+  margin: 0 auto;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+.wrapper .our-team .team-member .member-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.wrapper .our-team .team-member h3 {
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  margin: 15px 0 0;
+}
+
+.wrapper .our-team .team-member span {
+  font-size: 18px;
+}
+
+.wrapper .our-team .team-member p {
+  margin-top: 20px;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.our-team .team-member .member-img .social-media {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background: rgba(0, 0, 0, 0.65);
+  width: 95%;
+  height: 95%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.our-team .team-member .member-img .social-media .item {
+  margin: 0 10px;
+}
+
+.our-team .team-member .member-img .social-media .fab {
+  color: #48aed6;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.our-team .team-member .member-img:hover .social-media {
+  opacity: 1;
+}
